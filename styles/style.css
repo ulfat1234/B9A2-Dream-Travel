@@ -3,8 +3,29 @@
 body {
     font-family: Mulish;
     border: 2px solid tomato;
-    max-width: 100%;
-    margin: 50px;
+    width: 1440px;
+    margin: auto
+}
+
+.container {
+    border: 2px solid seagreen;
+    max-width: 1440px;
+    max-height: 6940px;
+}
+
+button {
+    color: #FFF;
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #FF5400;
+    cursor: pointer;
+    transition: 1s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: greenyellow;
 }
 
 /* header section */
@@ -41,4 +62,80 @@ body {
     justify-content: center;
     align-items: center;
     gap: 44px;
+}
+
+/* Explore Section */
+
+.banner-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-img {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    width: 1440px;
+    height: 500px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-txt h1 {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.banner-txt p {
+    width: 676px;
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 50px;
+}
+
+.transparent {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 800px;
+    padding: 16px;
+    margin: auto;
+}
+
+
+.where>input[type=text] {
+    color: rgba(19, 19, 24, 0.50);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 16px;
+}
+
+.where input {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+}
+
+.when,
+.select {
+    display: flex;
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    align-items: center;
+    padding-left: 16px;
+    color: rgba(19, 19, 24, 0.50);
+    font-family: Mulish;
 }
