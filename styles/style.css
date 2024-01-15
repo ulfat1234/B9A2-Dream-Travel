@@ -1,1 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+body {
+    font-family: Mulish;
+    border: 2px solid tomato;
+    max-width: 100%;
+    margin: 50px;
+}
+
+/* header section */
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dream-travel {
+    display: flex;
+    align-items: center;
+    color: #131318;
+    font-family: Mulish;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.dream-travel img {
+    width: 68px;
+    height: 56.008px;
+    margin-right: 16px;
+}
+
+.travel,
+.home {
+    color: #FF5400;
+}
+
+.nav-item {
+    display: inline-flex;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+}
