@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
 
+
 body {
     font-family: Mulish;
-    width: 1440px;
-    margin: auto
 }
 
+
 .container {
-    max-width: 1170px;
-    max-height: 500px;
-    margin-bottom: 100px;
+    max-width: 1170px !important;
+    padding: 0 20px;
+    margin: 0 auto;
 }
+
+
+.menuicon {
+    display: none;
+}
+
 
 button {
     color: #FFF;
@@ -22,10 +28,12 @@ button {
     transition: 1s;
 }
 
+
 button:hover {
     transform: scale(1.1);
     background-color: greenyellow;
 }
+
 
 .section-header {
     color: #131318;
@@ -33,13 +41,16 @@ button:hover {
     font-size: 40px;
 }
 
+
 /* header section */
+
 
 .header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .dream-travel {
     display: flex;
@@ -50,16 +61,19 @@ button:hover {
     font-weight: 800;
 }
 
+
 .dream-travel img {
     width: 68px;
     height: 56.008px;
     margin-right: 16px;
 }
 
+
 .travel,
 .home {
     color: #FF5400;
 }
+
 
 .nav-item {
     display: inline-flex;
@@ -69,7 +83,9 @@ button:hover {
     gap: 44px;
 }
 
+
 /* Explore Section */
+
 
 .banner-txt {
     display: flex;
@@ -78,20 +94,24 @@ button:hover {
     align-items: center;
 }
 
+
 .banner-img {
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
-    width: 1440px;
     height: 500px;
+    width: auto;
     border-radius: 16px;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 100px;
 }
+
 
 .banner-txt h1 {
     color: #FFF;
     font-size: 64px;
     font-weight: 800;
 }
+
 
 .banner-txt p {
     width: 676px;
@@ -103,6 +123,7 @@ button:hover {
     line-height: 26px;
     margin-bottom: 50px;
 }
+
 
 .transparent {
     border-radius: 8px;
@@ -116,6 +137,8 @@ button:hover {
 }
 
 
+
+
 .where>input[type=text] {
     color: rgba(19, 19, 24, 0.50);
     font-family: Mulish;
@@ -123,6 +146,7 @@ button:hover {
     font-weight: 400;
     padding-left: 16px;
 }
+
 
 .where input {
     width: 174px;
@@ -132,57 +156,77 @@ button:hover {
     border: none;
 }
 
+
 .when,
 .select {
     display: flex;
     width: 174px;
     height: 52px;
+    justify-content: space-between;
     border-radius: 8px;
     background: #FFF;
     align-items: center;
-    padding-left: 16px;
+    padding: 0 10px;
     color: rgba(19, 19, 24, 0.50);
     font-family: Mulish;
 }
 
+
 /* Popular Section */
 .popular {
     display: flex;
+    gap: 53px;
     justify-content: space-between;
 }
 
+
 .box {
-    width: 650px;
     color: rgba(19, 19, 24, 0.70);
     font-family: Mulish;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    margin: 20px;
 }
+
 
 .right-part img {
     width: 540px;
-    height: 586px;
-
+    height: 550px;
 }
 
+
 /* Section Destination */
-.destination>.section-header>h1 {
-    text-align: center;
+.destinations {
     margin-top: 100px;
 }
 
-.destination>p {
+
+.destination {
+    display: flex;
+    justify-content: center;
     width: 643px;
-    color: rgba(19, 19, 24, 0.70);
+}
+
+
+.headerdestination {
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+
+.destinationsp {
     font-family: Mulish;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    letter-spacing: 0em;
     text-align: center;
-    margin: auto;
 }
+
 
 .img-1,
 .img-2,
@@ -193,6 +237,7 @@ button:hover {
 .img-7 {
     position: relative;
 }
+
 
 .Maldives,
 .Indonesia,
@@ -209,22 +254,14 @@ button:hover {
     font-family: Mulish;
     font-size: 28px;
 
+
 }
+
 
 .box1 {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
-}
-
-.box1 img {
-    width: 710px;
-    height: 350px;
-}
-
-
-.box2 img {
-    height: 350px;
 }
 
 
@@ -233,32 +270,9 @@ button:hover {
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 
-}
 
-.img-3 img {
-    width: 452px;
-    ;
-}
-
-.img-4 img {
-    width: 620px;
-}
-
-.img-5 img {
-    width: 327px;
-}
-
-.box3 img {
-    height: 350px;
-}
-
-.img-6 img {
-    width: 632px;
-}
-
-.img-7 img {
-    width: 785px;
 }
 
 
@@ -266,6 +280,7 @@ button:hover {
 .choose-us>.section-header>h1 {
     text-align: center;
 }
+
 
 .choose-us>p {
     color: rgba(19, 19, 24, 0.70);
@@ -278,61 +293,68 @@ button:hover {
     margin: auto;
 }
 
+
 .row-1 {
-    margin-top: 50px;
+    margin-top: 48px;
     display: flex;
+    gap: 24px;
     justify-content: space-between;
 }
 
-.container-1 {
-    width: 655px;
-    height: 284px;
-    flex-shrink: 0;
+
+.left-choseus {
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
     padding: 25px;
 }
 
-.container-2 {
+
+.right-choseus {
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
-    width: 655px;
     height: 284px;
     padding: 25px;
 }
 
-.container-3 {
+
+.row-2 {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+
+.bottom-choseus {
+    width: 573px;
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
-    width: 655px;
     height: 284px;
     flex-shrink: 0;
     padding: 25px;
     margin-top: 25px;
 }
 
-.row-2 {
-    display: flex;
-    justify-content: space-around;
-}
+
+
 
 /* Newsletter Section */
 .newsletter {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
     margin-top: 100px;
 }
+
 
 .news-container {
     border-radius: 16px;
     border: 1px solid #FF5400;
-    width: 500px;
-    height: 422px;
-    padding: 50px;
+    padding: 40px;
 }
+
 
 .news-container p {
     color: #5A5A5D;
@@ -340,67 +362,74 @@ button:hover {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    width: 350px;
-
 }
+
 
 .input-container {
     display: flex;
     flex-direction: column;
-
-
 }
+
 
 hr {
     margin-bottom: 30px;
 }
 
+
 .inputbox {
     position: relative;
-    width: 480px;
-    height: 52px;
-    margin-bottom: 50px;
 }
 
+
+.inputbox2 {
+    margin-bottom: 16px;
+}
+
+
+
+
 .inputbox input {
-    width: 100%;
-    height: 52px;
-    padding: 10px;
+    width: 90%;
+    padding: 16px;
     color: rgba(19, 19, 24, 0.30);
     font-size: large;
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
 }
 
-.inputbox span {
-    position: absolute;
-    left: 20px;
-    top: 25px;
-}
+
+
 
 .subscribe {
-    width: 505px;
+    /* width: 505px; */
     height: 52px;
 }
 
+
+.img-container {
+    position: relative;
+}
+
+
 .img-container img {
-    width: 810px;
-    height: 522px;
     background-repeat: no-repeat;
 }
 
+
 .save {
-    position: relative;
+    position: absolute;
     border-radius: 16px;
     background: #FF5400;
     width: 324px;
     height: 120px;
     transform: rotate(-19.628deg);
     padding: 20px;
-    top: -220px;
-    right: -430px;
+    bottom: 135px;
+    right: 15px;
+
 
 }
+
 
 .save>p {
     text-align: center;
@@ -412,6 +441,7 @@ hr {
     margin-bottom: 0;
 }
 
+
 .save>h3 {
     text-align: center;
     color: #FFF;
@@ -419,23 +449,28 @@ hr {
     font-weight: 800;
     margin-top: 2px;
 
+
 }
+
 
 /* Footer Section */
 .footer-container {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1440px;
     height: 502px;
     background: rgba(19, 19, 24, 0.05);
 
+
 }
+
 
 .footer-header {
     display: inline-block;
 }
+
 
 .footer-title {
     display: flex;
@@ -443,10 +478,12 @@ hr {
     gap: 20px;
 }
 
+
 .footer-description {
-    width: 769px;
+    width: 100%;
     text-align: center;
 }
+
 
 .icons {
     margin-top: 32px;
@@ -454,10 +491,207 @@ hr {
     gap: 23px;
 }
 
+
 .copyright {
     color: #131318;
     font-family: Inter;
     font-size: 16px;
     margin-top: 50px;
 
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+
+    .container {
+        max-width: 100% !important;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+
+    .nav-item {
+        display: none;
+    }
+
+
+    .dream-travel {
+        display: flex;
+        gap: 2px;
+        align-items: center;
+        color: #131318;
+        font-family: Mulish;
+        font-size: 21.54px;
+        font-weight: 800;
+    }
+
+
+    .dream-travel img {
+        width: 28.72px;
+    }
+
+
+    .menuicon {
+        display: block;
+    }
+
+
+    .banner-img {
+        margin-bottom: 50px;
+    }
+
+
+    .banner-txt h1 {
+        font-size: 22px;
+    }
+
+
+    .banner-txt p {
+        width: 100%;
+        margin-bottom: 14px;
+    }
+
+
+
+
+    .transparent {
+        width: 80%;
+        padding: 10px;
+        margin: auto;
+        flex-direction: column;
+    }
+
+
+    .where,
+    .select,
+    .when {
+        width: 100%;
+    }
+
+
+    .popular {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .section-header {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+    .right-part img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .destination {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .headerdestination,
+    .destinationsp,
+    .Maldives,
+    .Indonesia,
+    .Srilanka,
+    .North-America,
+    .Kashmir,
+    .Bangladesh,
+    .Bandarban {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+    .box1,
+    .box2,
+    .box3 {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+
+    .row-1 {
+        flex-direction: column;
+    }
+
+
+    .left-choseus,
+    .right-choseus,
+    .bottom-choseus {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .choose-us>p {
+        width: 100%;
+    }
+
+
+
+
+    .newsletter {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+
+    .news-container {
+        width: 100%;
+    }
+
+
+    .inputbox input {
+        width: 100%;
+    }
+
+
+    .subscribe {
+        width: 100%;
+    }
+
+
+    .save {
+        width: 100%;
+        bottom: 20px;
+    }
+
+
+    .footer-title {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .footer-description {
+        width: 100%;
+    }
+
+
+    .icons {
+        justify-content: center;
+    }
+}
+
+
+button {
+    color: #FFF;
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #FF5400;
+    cursor: pointer;
+    transition: 1s;
 }
