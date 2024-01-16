@@ -2,13 +2,12 @@
 
 body {
     font-family: Mulish;
-    border: 2px solid tomato;
+    /* border: 2px solid tomato; */
     width: 1440px;
     margin: auto
 }
 
 .container {
-    border: 2px solid seagreen;
     max-width: 1170px;
     max-height: 500px;
     margin-bottom: 100px;
@@ -150,7 +149,6 @@ button:hover {
 
 /* Popular Section */
 .popular {
-    border: 3px solid red;
     display: flex;
     justify-content: space-between;
 }
@@ -187,46 +185,79 @@ button:hover {
     margin: auto;
 }
 
-.box1 img{
-    width: 710px;
-    height: 350px;
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5,
+.img-6,
+.img-7 {
+    position: relative;
 }
-.box1{
+
+.Maldives,
+.Indonesia,
+.Srilanka,
+.North-America,
+.Kashmir,
+.Bangladesh,
+.Bandarban {
+    position: absolute;
+    top: 36%;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: 800;
+
+}
+
+.box1 {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
 
-.box2 img{
+.box1 img {
+    width: 710px;
     height: 350px;
 }
-.box2{
+
+
+.box2 img {
+    height: 350px;
+}
+
+
+.box2, .box3 {
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
-    
+
 }
-.img-3 img{
-    width: 452px;;
+
+.img-3 img {
+    width: 452px;
+    ;
 }
-.img-4 img{
+
+.img-4 img {
     width: 620px;
 }
-.img-5 img{
+
+.img-5 img {
     width: 327px;
 }
 
-.box3{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px ;
+.box3 img {
+    height: 350px;
 }
-.box3 img{
-    height: 350px ;
-}
-.img-6 img{
+
+.img-6 img {
     width: 632px;
 }
-.img-7 img{
+
+.img-7 img {
     width: 785px;
 }
