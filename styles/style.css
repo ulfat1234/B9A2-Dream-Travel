@@ -331,7 +331,7 @@ button:hover {
 
 
 .bottom-choseus {
-    width: 573px;
+    width: 584px;
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
@@ -502,13 +502,16 @@ hr {
 }
 
 
+/* For Responsive */
+
 @media only screen and (max-width: 600px) {
 
 
     .container {
-        max-width: 100% !important;
+        width: 100%;
         padding: 0 20px;
         margin: 0 auto;
+        margin-left: 20px;
     }
 
 
@@ -516,7 +519,10 @@ hr {
         display: none;
     }
 
-
+    .header-section{
+       
+        width: 100%;
+    }
     .dream-travel {
         display: flex;
         gap: 2px;
@@ -529,7 +535,7 @@ hr {
 
 
     .dream-travel img {
-        width: 28.72px;
+        width: 70px;
     }
 
 
@@ -540,6 +546,11 @@ hr {
 
     .banner-img {
         margin-bottom: 50px;
+        height: 600px;
+    }
+    .banner-img>.banner-txt>p{
+        width: 300px;
+        margin-left: 16px;
     }
 
 
@@ -561,13 +572,14 @@ hr {
         padding: 10px;
         margin: auto;
         flex-direction: column;
+        gap: 40px;
     }
 
 
     .where,
     .select,
-    .when {
-        width: 100%;
+    .when, .find {
+        width: 95%;
     }
 
 
@@ -579,6 +591,9 @@ hr {
 
     .section-header {
         font-size: 20px;
+    }
+    .box{
+        margin-left: 0px;
     }
 
 
@@ -592,7 +607,7 @@ hr {
     }
 
 
-    .destination {
+    .destinations {
         flex-direction: column;
         align-items: center;
     }
@@ -618,14 +633,17 @@ hr {
         flex-direction: column;
         gap: 20px;
         width: 100%;
+        align-items: center;
     }
 
     .box2>.common>img{
         width: 570px;
+        height: 300px;
     }
 
     .box3>.img-6>img,.box3>.img-7>img{
         width: 570px;
+        height: 300px;
     }
 
     .row-1 {
@@ -636,8 +654,11 @@ hr {
     .left-choseus,
     .right-choseus,
     .bottom-choseus {
-        width: 100%;
+        width: 90%;
         margin-bottom: 20px;
+    }
+    .bottom-choseus{
+        width: 525px;
     }
 
     .choose-us>p {
@@ -645,12 +666,14 @@ hr {
     }
 
 
-
+    .section-header>.why{
+        margin-left: 0px;
+    }
 
     .newsletter {
         flex-direction: column;
         gap: 20px;
-        width: 100%;
+        width: 85%;
     }
 
 
@@ -668,10 +691,14 @@ hr {
         width: 100%;
     }
 
+    .img-container>img{
+        width: 120%;
+    }
 
     .save {
-        width: 100%;
-        bottom: 20px;
+        width: 50%;
+        top: 160px;
+        right: -80px;
     }
 
 
@@ -703,5 +730,5 @@ button {
 }
 
 .footer{
-    width: 120%;
+    width: 117%;
 }
